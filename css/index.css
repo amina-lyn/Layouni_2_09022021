@@ -5,6 +5,8 @@
   --box-shadow: 6px 6px 6px #e2e1e1;
   --background-color: #f2f2f2;
   --charter-color: #0065fc;
+  --color-star: #0065fc;
+  --color-star-empty: #f2f2f2;
 }
 
 body {
@@ -27,22 +29,17 @@ body {
   font-style: 100;
   border-top: var(--charter-color) solid;
   color: var(--charter-color);
-  position: relative;
-
   margin: var(--margin-section);
 }
 .nav-header__content__link--normal {
   font-weight: 100;
   color: black;
-  position: relative;
-  left: 1350px;
   margin: var(--margin-section);
 }
 .nav-header__content__link--highlight {
   font-weight: 900;
   color: var(--charter-color);
   position: relative;
-  left: 1400px;
   margin: var(--margin-section);
 }
 
@@ -124,6 +121,8 @@ input::placeholder {
 .header__content__icon {
   padding: 15px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px;
   border-radius: 30px;
   background-color: #deebff;
@@ -135,7 +134,7 @@ input::placeholder {
 }
 
 .header__content__text-icon {
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid;
@@ -160,7 +159,6 @@ input::placeholder {
   font-size: 10px;
   color: var(--charter-color);
   margin: var(--margin-section);
-  position: relative;
   bottom: 50px;
 }
 
@@ -172,41 +170,104 @@ input::placeholder {
   position: relative;
   bottom: 75px;
 }
-body {
-  width: calc(100% - var(--margin-section));
-  height: calc(100% - var(--margin-section));
+.body {
+  margin: 3rem;
+  width: calc(100vw - var(--margin-section) * 2);
+  height: calc(100vh - var(--margin-section) * 2);
   display: grid;
   grid-template-areas:
     " header header"
     " hebergement popular"
     " activities  activities"
     " footer  footer";
-  background-color: var(--background-color);
   gap: 20%;
 }
+
 .header:first-child {
   grid-area: header;
-  row-gap: ;
 }
 
+/*---- Hebergements ----*/
 .lodging:nth-child(2) {
   grid-area: hebergement;
+  background-color: var(--background-color);
+  grid-template-columns: 66% 33%;
+  grid-template-rows: repeat(3, 33%);
+  width: 66%;
 }
 .lodging__content__card__image {
   width: 33%;
-  height: 50%;
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 33%);
+  border-radius: 1rem;
+  border: white solid;
+  box-shadow: var(--box-shadow);
+  object-fit: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+.lodging__content__card__subtitle {
+  font-weight: bold;
+  background-color: white;
+  width: 30%;
+  height: 30%;
+}
+.lodging__content__card__text {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+}
+.lodging__content__card__icon {
+  color: var(--color-star);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.lodging__content__card__icon--empty {
+  color: var(--color-star-empty);
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+/*---- Populaires ----*/
 
 .favorites:nth-child(3) {
   grid-area: popular;
+  background-color: var(--background-color);
+  width: 33%;
 }
+.favorites__content__card__image {
+  width: 50%;
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 33%);
+  border-radius: 1rem;
+  border: white solid;
+  box-shadow: var(--box-shadow);
+  object-fit: cover;
+}
+
+.favorites__content__card__icon {
+  color: var(--color-star);
+}
+
+.favorites__content__card__icon--empty {
+  color: var(--color-star-empty);
+}
+/*---- Activités ----*/
 
 .activities:nth-child(4) {
   grid-area: activities;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr 200px 1fr 200px;
 }
+/*---- footer ----*/
 
 .footer:last-child(5n) {
   grid-area: footer;
@@ -214,11 +275,3 @@ body {
   align-items: flex-end;
   color: blue;
 }
-
-/* ---- Hebergements ----*/
-
-/* ---- Populaires ----*/
-
-/* ---- Activités ----*/
-
-/* ---- footer ----*/
