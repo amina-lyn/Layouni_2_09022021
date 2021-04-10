@@ -1,0 +1,56 @@
+.header__title {
+}
+
+.header__subtitle {
+}
+
+/* HEADER-NAV */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav__logo {
+}
+.header-nav__content {
+}
+.header-nav__content__link {
+}
+.header-nav__content__link--active {
+}
+.header-nav__content__link--button {
+}
+
+/* HEADER-SEARCH-BOX */
+
+.header-search-box {
+}
+.header-search-box__icon {
+}
+.header-search-box__input {
+}
+.header-search-box__button {
+}
+
+/* HEADER-FILTERS */
+
+.header-filters {
+  display: flex;
+}
+.header-filters__toggle {
+  display: flex;
+}
+.header-filters__toggle__title {
+}
+.header-filters__toggle__icon {
+}
+
+/* HEADER-INFO */
+
+.header-info {
+  display: flex;
+}
+.header-info__icon {
+}
+.header-info__text {
+}
