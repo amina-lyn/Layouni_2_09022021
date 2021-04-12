@@ -1,0 +1,111 @@
+main {
+  margin: var(--margin-section);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 66% 33%;
+  grid-template-areas:
+    "hebergement popular"
+    "activities activities";
+}
+
+/* herbergement */
+
+.lodging:first-child {
+  grid-area: "hebergement";
+}
+
+.lodging__title {
+}
+.lodging__content {
+  margin: var(--margin-section);
+  width: calc(60% - var(--margin-section) * 2);
+  height: calc(40% - var(--margin-section) * 2);
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  gap: 3rem;
+  background-color: var(--background-color);
+  border-radius: 3rem;
+}
+.lodging__content__card {
+}
+.lodging__content__card__image {
+  width: 13rem;
+  height: 8rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border: 4px solid white;
+  box-shadow: var(--box-shadow);
+  display: grid;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lodging__content__card__subtitle {
+  font-weight: bold;
+  background-color: white;
+}
+.lodging__content__card__text {
+  background-color: white;
+}
+.lodging__content__card__stars {
+  color: var(--primary-color);
+  background-color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.lodging__content__card__stars__icon--empty {
+  color: var(--secondary-color);
+  background-color: white;
+}
+.lodging__text {
+  font-weight: bold;
+}
+
+/* Popular */
+
+.favorites {
+  grid-area: "popular";
+}
+.favorites__title {
+}
+.favorites__icon {
+}
+.favorites__content {
+}
+.favorites__content__card {
+}
+.favorites__content__card__image {
+}
+.favorites__content__card__subtitle {
+}
+.favorites__content__card__text {
+}
+.favorites__content__card__stars__icon {
+  color: var(--primary-color);
+}
+
+.favorites__content__card__stars__icon--empty {
+  color: var(--secondary-color);
+  background-color: white;
+}
+
+/* Activities */
+
+.activities {
+}
+.activities__title {
+}
+
+.activities__content {
+}
+.activities__content__card {
+}
+.activities__content__card__image {
+}
+.activities__content__card__text {
+}
