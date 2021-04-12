@@ -178,7 +178,6 @@ main {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
-  border-bottom-left-radius: 1rem;
 }
 /*---- Activities ----*/
 .activities:last-child {
