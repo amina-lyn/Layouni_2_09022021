@@ -172,7 +172,6 @@ main {
 .activities:last-child {
   weight: 150rem;
   height: 60rem;
-  background-color: var(--background-color);
   grid-area: "activities";
 }
 .activities__title {

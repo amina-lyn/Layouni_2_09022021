@@ -1,5 +1,18 @@
-.footer__content__card__title {
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  width: 190rem;
+  height: 20rem;
+  background-color: var(--background-color);
+  font-size: var(--font-size-base);
 }
 
-.footer__content__card__text {
+.footer__card__title {
+  margin: var(--margin-section);
+  font-weight: bold;
+}
+
+.footer__card__text {
+  margin: var(--margin-section);
+  margin-right: 30rem;
 }
