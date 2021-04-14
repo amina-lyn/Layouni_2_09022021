@@ -16,7 +16,6 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(3, 33%);
-  gap: rem;
   margin: var(--margin-section);
   width: 50rem;
   height: 40rem;
@@ -31,6 +30,7 @@ main {
   padding-right: 30rem;
   padding-top: 2rem;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 .lodging__content {
   padding: 2rem;
@@ -59,12 +59,12 @@ main {
   font-weight: bold;
   background-color: white;
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .lodging__content__card__text {
   background-color: white;
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .lodging__content__card__stars {
   color: var(--primary-color);
@@ -88,19 +88,44 @@ main {
 
 .favorites:nth-child(2) {
   grid-area: "popular";
+  gap: rem;
+  margin: var(--margin-section);
+  width: 35rem;
+  height: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  border-radius: 1rem;
 }
 .favorites__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-right: 7rem;
+  padding-top: 2rem;
 }
 .favorites__icon {
+  padding-top: 2rem;
+  padding-right: 1rem;
 }
 .favorites__content {
+  padding: 2rem;
+  margin-bottom: rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color);
+  display: grid;
 }
 .favorites__content__card {
+  padding-right: 8rem;
+  display: flex;
+  justify-content: space-around;
 }
 .favorites__content__card__image {
-  width: 8rem;
+  width: 10rem;
   height: 8rem;
-  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
   border: 4px solid white;
   box-shadow: var(--box-shadow);
@@ -111,20 +136,43 @@ main {
   align-items: center;
 }
 .favorites__content__card__subtitle {
+  width: 6rem;
   font-weight: bold;
+  background-color: white;
+  order: 1;
+  display: flex;
+  align-content: center;
+  padding-right: 3rem;
+  border-top-right-radius: 1rem;
 }
 
 .favorites__content__card__text {
+  width: 6rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-right: 3rem;
 }
 
-.favorites__content__card__stars__icon {
+.favorites__content__card__stars {
   color: var(--primary-color);
   background-color: white;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-.favorites__content__card__stars__icon--empty {
+.favorites__content__card__stars--empty {
   color: var(--secondary-color);
   background-color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Activities */
