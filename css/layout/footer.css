@@ -1,18 +1,24 @@
-.Footer {
+:root {
+  --footer-card-spacing: calc(var(--spacing-xl) * 8);
+}
+
+footer {
   display: flex;
-  justify-content: space-between;
-  width: 190rem;
-  height: 20rem;
   background-color: var(--background-color);
   font-size: var(--font-size-base);
+  padding: var(--margin-section);
+}
+
+.footer__card {
+  margin-right: var(--footer-card-spacing);
 }
 
 .footer__card__title {
-  margin: var(--margin-section);
-  font-weight: bold;
+  font-weight: 800;
+  line-height: 3rem;
 }
 
 .footer__card__text {
-  margin: var(--margin-section);
-  margin-right: 30rem;
+  line-height: 2rem;
+  font-weight: 300;
 }
