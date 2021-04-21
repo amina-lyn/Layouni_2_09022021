@@ -1,7 +1,3 @@
-:root {
-  --footer-card-spacing: calc(var(--spacing-xl) * 8);
-}
-
 footer {
   display: flex;
   background-color: var(--background-color);
@@ -10,7 +6,7 @@ footer {
 }
 
 .footer__card {
-  margin-right: var(--footer-card-spacing);
+  width: calc(100% / 3);
 }
 
 .footer__card__title {
