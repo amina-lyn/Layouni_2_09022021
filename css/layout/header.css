@@ -96,7 +96,7 @@ header {
 
 /* HEADER-FILTERS */
 :root {
-  --color-border-filters: #e7e7e7;
+  --color-border-filters: #aaaaaa;
   --border-radius: 2.5rem;
 }
 
@@ -123,7 +123,7 @@ header {
   font-weight: 300;
   font-size: var(--font-size-base);
   padding: 1rem 2rem 1rem 4rem;
-  border: 1px var(--color-border-filters) solid;
+  border: 2px var(--color-border-filters) solid;
   border-radius: var(--border-radius);
 }
 
