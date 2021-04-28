@@ -146,6 +146,10 @@ main {
 
 /* Activities */
 
+:root {
+  --card-width: 16rem;
+}
+
 .activities {
   grid-area: activities;
 }
@@ -158,42 +162,40 @@ main {
 
 .activities__content {
   display: grid;
+  grid-gap: var(--spacing-base);
   grid-template-columns: repeat(4, 1fr);
 }
 
-.activities__content > :nth-child(1) {
-  grid-row: 1/3;
-}
-
-.activities__content > :nth-child(2) {
-  grid-row: 1/2;
-}
-
-.activities__content > :nth-child(3) {
-  grid-row: 2/3;
-}
-
+.activities__content > :nth-child(1),
 .activities__content > :nth-child(4) {
   grid-row: 1/3;
 }
 
+.activities__content > :nth-child(1) .activities__content__card__image,
+.activities__content > :nth-child(4) .activities__content__card__image {
+  height: calc(var(--card-width) * 2 + var(--spacing-base) * 2 + 1rem);
+}
+
+.activities__content > :nth-child(2),
 .activities__content > :nth-child(5) {
   grid-row: 1/2;
 }
 
+.activities__content > :nth-child(3),
 .activities__content > :nth-child(6) {
   grid-row: 2/3;
 }
 
 .activities__content__card {
-  width: calc(100% - var(--spacing-xs) * 2 8);
+  width: 100%;
   height: 100%;
-  padding: var(--spacing-xs);
   background-color: var(--white-color);
 }
 
 .activities__content__card__image {
   width: 100%;
+  height: var(--card-width);
+  object-fit: cover;
   border-radius: 2rem 2rem 0 0;
   box-shadow: var(--box-shadow);
 }

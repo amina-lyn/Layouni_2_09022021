@@ -117,14 +117,14 @@ header {
   align-items: center;
   position: relative;
   margin-right: var(--spacing-xs);
+  border-radius: var(--border-radius);
+  border: 2px var(--color-border-filters) solid;
 }
 
 .header-filters__toggle__title {
   font-weight: 300;
   font-size: var(--font-size-base);
   padding: 1rem 2rem 1rem 4rem;
-  border: 2px var(--color-border-filters) solid;
-  border-radius: var(--border-radius);
 }
 
 .header-filters__toggle__icon {

@@ -18,3 +18,9 @@ footer {
   line-height: 2rem;
   font-weight: 300;
 }
+
+@media only screen and (min-width: 426px) and (max-width: 769px) and (orientation: portrait) {
+  footer {
+    flex-direction: column;
+  }
+}
