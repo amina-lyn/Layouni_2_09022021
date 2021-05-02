@@ -96,7 +96,7 @@ header {
 
 /* HEADER-FILTERS */
 :root {
-  --color-border-filters: #aaaaaa;
+  --color-border-filters: #ddd;
   --border-radius: 2.5rem;
 }
 
@@ -122,7 +122,7 @@ header {
 }
 
 .header-filters__toggle__title {
-  font-weight: 300;
+  font-weight: bold;
   font-size: var(--font-size-base);
   padding: 1rem 2rem 1rem 4rem;
 }
@@ -138,6 +138,7 @@ header {
   background-color: var(--secondary-color);
   border-radius: var(--border-radius);
 }
+/* MOBILE */
 
 /* HEADER-INFO */
 
@@ -148,7 +149,7 @@ header {
 .header-info__icon {
   color: var(--primary-color);
   padding: 0.5rem;
-  border: 1px solid var(--background-color);
+  border: 1px solid var(--color-border-filters);
   border-radius: 4rem;
   width: 0.5rem;
   height: 0.5rem;
@@ -157,3 +158,4 @@ header {
   padding: 0 0 0 1rem;
   line-height: var(--spacing-line-xs);
 }
+/* MOBILE */

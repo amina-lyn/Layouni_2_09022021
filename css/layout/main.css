@@ -7,6 +7,7 @@ main {
     "hebergement popular"
     "activities activities";
 }
+/* MOBILE */
 
 /* herbergement */
 
@@ -23,6 +24,7 @@ main {
 .lodging__title {
   font-size: var(--font-size-xl);
   font-weight: bold;
+  line-height: 4rem;
 }
 .lodging__content {
   display: grid;
@@ -65,7 +67,9 @@ main {
 .lodging__text {
   font-weight: bold;
   padding: 1rem 38rem 0 0;
+  line-height: 4rem;
 }
+/* MOBILE */
 
 /* Popular */
 
@@ -143,6 +147,7 @@ main {
   border-radius: 0 1rem 1rem 0;
   box-shadow: var(--box-shadow);
 }
+/* MOBILE */
 
 /* Activities */
 
@@ -157,7 +162,7 @@ main {
 .activities__title {
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 1rem;
+  line-height: 3rem;
 }
 
 .activities__content {
@@ -207,3 +212,4 @@ main {
   padding: 0.5rem 0 1rem 1rem;
   font-weight: bold;
 }
+/* MOBILE */
