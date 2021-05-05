@@ -20,8 +20,13 @@ footer {
 }
 /* MOBILE */
 
-@media only screen and (min-width: 426px) and (max-width: 769px) and (orientation: portrait) {
+@media only screen and (min-width: 425px) and (max-width: 769px) and (orientation: portrait) {
   footer {
+    flex-direction: column;
+  }
+
+  .footer__card {
+    display: flex;
     flex-direction: column;
   }
 }
