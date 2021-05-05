@@ -208,7 +208,7 @@ main {
   font-weight: bold;
 }
 /* MOBILE */
-@media only screen and (min-width: 425px) and (max-width: 769px) and (orientation: portrait) {
+@media only screen and (max-width: 769px) and (orientation: portrait) {
   main {
     grid-template-areas:
       "popular"
