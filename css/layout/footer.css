@@ -20,7 +20,7 @@ footer {
 }
 /* MOBILE */
 
-@media only screen and (min-width: 425px) and (max-width: 769px) and (orientation: portrait) {
+@media screen and (max-width: 769px) {
   footer {
     flex-direction: column;
   }
@@ -28,5 +28,6 @@ footer {
   .footer__card {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
