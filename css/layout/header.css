@@ -20,6 +20,10 @@ header {
   margin-bottom: var(--spacing-base);
 }
 
+.header-nav__logo {
+  width: 6rem;
+}
+
 .header-nav__content {
   display: flex;
   justify-content: space-between;
@@ -44,12 +48,12 @@ header {
   border-top: 2px var(--primary-color) solid;
 }
 
-.header-nav__content__link--button /*Activités*/ {
+.header-nav__content__link--button /*S'inscrire*/ {
   font-weight: 600 !important;
   color: var(--primary-color) !important;
 }
 
-.header-nav__content__link:hover /*S'inscrire*/ {
+.header-nav__content__link:hover {
   color: var(--primary-color) !important;
   border-top: 2px var(--primary-color) solid !important;
 }
@@ -166,25 +170,47 @@ header {
 /* MOBILE */
 
 @media screen and (max-width: 769px) {
-  .header .header-search-box__glass {
+  .header5 .header .header-search-box__glass {
     display: flex;
   }
+  .header-nav {
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+  }
   .header-nav__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin: var(--spacing-base) 0;
+    padding: 1rem;
   }
   .header-filters {
     flex-direction: column;
     align-items: flex-start;
   }
-  .header-nav__content__link {
-    border-top: none;
-    border-bottom: 2px transparent solid;
+  .header-nav__content__link--button {
+    position: absolute;
+    top: 0.2rem;
+    left: 15rem;
   }
+
+  .header-nav__content__link--button:hover {
+    border-top: none !important;
+    border-bottom: 2px transparent solid !important;
+  }
+
+  .header-nav__content__link--active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px var(--primary-color) solid !important;
+    border-top: none !important;
+  }
+
   .header-nav__content__link:hover {
     display: flex;
     flex-direction: row-reverse;
-    border-top: none;
+    border-top: none !important;
+    border-bottom: var(--background-color) 2px solid !important;
+  }
+  .header-nav__content__link--fixed:hover {
+    border-bottom: var(--background-color) 2px solid !important ;
   }
   .header-filters__title {
     margin: var(--spacing-xs);
@@ -202,6 +228,7 @@ header {
 @media screen and (min-width: 425px) {
   .header-search-box__button__icon {
     display: none;
+    border-radius: 2.5rem;
   }
   .header-search-box__button__title {
     display: unset;
@@ -224,7 +251,15 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .header-nav {
+  .header-nav__ {
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .header-nav__content__link--button {
+    position: absolute;
+    top: 0.2rem;
+    left: 35rem;
   }
 }
