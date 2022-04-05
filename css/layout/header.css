@@ -169,7 +169,7 @@ header {
 }
 /* MOBILE */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 845px) {
   .header5 .header .header-search-box__glass {
     display: flex;
   }
@@ -179,7 +179,6 @@ header {
     margin: 0;
   }
   .header-nav__content {
-    margin: var(--spacing-base) 0;
     padding: 1rem;
   }
   .header-filters {
@@ -222,6 +221,9 @@ header {
 
   .header__title {
     display: flex;
+  }
+  .header-search-box__button {
+    width: 2.5rem;
   }
 }
 
