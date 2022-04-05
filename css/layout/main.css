@@ -126,6 +126,30 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.img-soleil-du-matin {
+  background-position: center;
+  background-image: url("/assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+  background-size: cover; /* taille du backgroung couvre tout*/
+  border-radius: 20px 0px 0px 20px;
+  height: 8rem;
+}
+
+.img-au-coeur-de-leau {
+  background-position: center;
+  background-image: url("/assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+  background-size: cover; /* taille du backgroung couvre tout*/
+  border-radius: 20px 0px 0px 20px;
+  height: 8rem;
+}
+.img-hôtel-tout-bleu-blanc {
+  background-position: center;
+  background-image: url("/assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+  background-size: cover; /* taille du backgroung couvre tout*/
+  border-radius: 20px 0px 0px 20px;
+  height: 8rem;
+}
+
 .favorites__content__card__subtitle {
   font-weight: bold;
   order: 1;
@@ -231,13 +255,15 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding-left: 0.5rem;
+    padding-left: 0rem;
+    width: 100%;
   }
 
   .lodging {
     width: 100%;
     order: 2;
     background-color: var(--white-color);
+    padding: 0;
   }
   .lodging__text {
     font-weight: bold;
@@ -254,12 +280,15 @@ main {
     position: unset;
     width: 100%;
     order: 1;
+    padding: 0;
+    border-radius: 0;
   }
+
   .favorites__title-container__title {
     padding-bottom: 1.5rem;
   }
   .favorites__content__card {
-    margin: 0.5rem;
+    width: 95%;
   }
   .description {
     width: 100%;
@@ -270,13 +299,17 @@ main {
   .activities {
     width: 100%;
     order: 3;
-    margin: 2rem;
+    margin: 0rem;
     padding: 0;
   }
 
   .activities__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .activities__content__card {
+    width: 85%;
   }
   .activities__content__card__image {
     height: 12rem;
