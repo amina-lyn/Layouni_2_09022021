@@ -265,9 +265,12 @@ main {
     background-color: var(--white-color);
     padding: 0;
   }
+  .lodging__title {
+    padding-left: 1rem;
+  }
   .lodging__text {
     font-weight: bold;
-    padding: 1rem 15rem 0 0;
+    padding: 1rem 15rem 0 1rem;
     line-height: 4rem;
   }
 
@@ -280,7 +283,7 @@ main {
     position: unset;
     width: 100%;
     order: 1;
-    padding: 0;
+    padding: 0.5rem;
     border-radius: 0;
   }
 
@@ -301,6 +304,10 @@ main {
     order: 3;
     margin: 0rem;
     padding: 0;
+  }
+
+  .activities__title {
+    padding-left: 1rem;
   }
 
   .activities__content {

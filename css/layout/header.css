@@ -1,5 +1,6 @@
 header {
   margin: 0 var(--margin-section);
+  padding-left: 1rem;
 }
 .register-mobile {
   display: none;
