@@ -1,4 +1,4 @@
-main {
+main{
   width: calc(100% - var(--margin-section) * 2);
   margin: var(--margin-section);
   display: grid;
